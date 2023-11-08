@@ -1,0 +1,58 @@
+<!-- Login Form -->
+<!--<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <h1 class="text-center">Login</h1>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>-->
+
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+             class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+          <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+            <p class="lead fw-normal mb-0 me-3">Iniciar Sesion</p>
+          </div>
+
+          <div class="divider d-flex align-items-center my-4"></div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form3Example3">Correo Electronico</label>
+            <input type="email" id="form3Example3" formControlName="email" class="form-control form-control-lg"/>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <label class="form-label" for="form3Example4">Password</label>
+            <input type="password" id="form3Example4" formControlName="password" class="form-control form-control-lg"/>
+          </div>
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button type="submit" class="btn btn-primary btn-lg"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Ingresar</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
