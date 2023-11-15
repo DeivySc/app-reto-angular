@@ -34,7 +34,7 @@ export class LoginComponent{
     const { email, password } = this.loginForm.value;
 
     if (email === 'test01' && password === 'test01') {
-      // this.router.navigateByUrl('/task');
+      this.router.navigateByUrl('/task');
       this.store.dispatch(login({ username: email, password: password }));
       this.store.select(selectUsername).subscribe(user => {
         console.log('aqui va: ',login);
